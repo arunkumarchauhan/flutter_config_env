@@ -1,0 +1,22 @@
+PODS:
+  - Flutter (1.0.0)
+  - flutter_config_env (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - flutter_config_env (from `.symlinks/plugins/flutter_config_env/ios`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  flutter_config_env:
+    :path: ".symlinks/plugins/flutter_config_env/ios"
+
+SPEC CHECKSUMS:
+  Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
+  flutter_config_env: 3c0bc878272a7db88975b06084a494db9676c0c2
+
+PODFILE CHECKSUM: 32ca27451571330feede15e357c943f6518e41c5
+
+COCOAPODS: 1.16.2

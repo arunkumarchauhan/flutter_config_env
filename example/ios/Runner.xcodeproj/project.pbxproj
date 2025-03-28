@@ -409,7 +409,7 @@
 					"$(PROJECT_DIR)/Flutter",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.byneapp.flutterConfigExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ak.flutterConfigExample;
 				PRODUCT_NAME = Runner;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -496,7 +496,7 @@
 					"$(PROJECT_DIR)/Flutter",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.byneapp.flutterConfigExample.dev;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ak.flutterConfigExample.dev;
 				PRODUCT_NAME = Runner;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -583,7 +583,7 @@
 					"$(PROJECT_DIR)/Flutter",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.byneapp.flutterConfigExample.staging;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ak.flutterConfigExample.staging;
 				PRODUCT_NAME = Runner;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -664,7 +664,7 @@
 					"$(PROJECT_DIR)/Flutter",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.byneapp.flutterConfigExample.dev;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ak.flutterConfigExample.dev;
 				PRODUCT_NAME = Runner;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -745,7 +745,7 @@
 					"$(PROJECT_DIR)/Flutter",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.byneapp.flutterConfigExample.staging;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ak.flutterConfigExample.staging;
 				PRODUCT_NAME = Runner;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -826,7 +826,7 @@
 					"$(PROJECT_DIR)/Flutter",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.byneapp.flutterConfigExample.dev;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ak.flutterConfigExample.dev;
 				PRODUCT_NAME = Runner;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -907,7 +907,7 @@
 					"$(PROJECT_DIR)/Flutter",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.byneapp.flutterConfigExample.staging;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ak.flutterConfigExample.staging;
 				PRODUCT_NAME = Runner;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -1046,7 +1046,7 @@
 					"$(PROJECT_DIR)/Flutter",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.byneapp.flutterConfigExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ak.flutterConfigExample;
 				PRODUCT_NAME = Runner;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -1075,7 +1075,7 @@
 					"$(PROJECT_DIR)/Flutter",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.byneapp.flutterConfigExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ak.flutterConfigExample;
 				PRODUCT_NAME = Runner;
 				VERSIONING_SYSTEM = "apple-generic";
 			};

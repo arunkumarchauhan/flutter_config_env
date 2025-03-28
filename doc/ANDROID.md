@@ -120,3 +120,7 @@ Edit your app-level build.gradle file to look like this:
     }
 
 You also need to make sure you are on the latest version of gradle
+
+#Note - For using this plugin with newly created projects using build.gradle.kts instead of build.gradle , new style of using it as follows:
+- apply(from = "${project(":flutter_config_env").projectDir}/dotenv.gradle")
+- Add     ```buildFeatures.buildConfig = true ``` inside the android block in app level build.gradle.kts

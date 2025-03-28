@@ -1,15 +1,8 @@
-## 0.0.2
-
-* Update 1.7.10 kotlin version
-* Remove Registrar
-* Update document
 ## 1.0.0
 
-* Fixing get "Null"
+* Publish plugin with android and ios support
 
-## 1.1.0
+## 2.0.0
 
-* Refactor code
-## 1.1.1
-
-* Support android sdk version 21
+* Upgrading project to support latest flutter 27.3.9 with gradle 8.10.2 and kotlin version 1.8.22
+* change compileSdkVersiob to compileSdk

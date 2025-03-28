@@ -99,4 +99,3 @@ tasks.whenTaskAdded { task ->
         }
     }
 }
-

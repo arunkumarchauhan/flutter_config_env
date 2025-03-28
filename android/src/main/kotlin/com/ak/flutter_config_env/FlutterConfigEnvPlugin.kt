@@ -1,30 +1,29 @@
 package com.ak.flutter_config_env
 
-import android.content.Context
-import android.content.res.Resources
-import androidx.annotation.NonNull
-import io.flutter.Log
 import io.flutter.embedding.engine.plugins.FlutterPlugin
 import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler
+import io.flutter.plugin.common.MethodChannel.Result
+import android.content.Context
+import android.content.res.Resources
+import android.util.Log
+import androidx.annotation.NonNull
+
 import java.lang.reflect.Field
 
-class FlutterConfigEnvPlugin(private val context: Context? = null): FlutterPlugin, MethodCallHandler {
-
-  private var applicationContext: Context? = context
-
+/** FlutterConfigEnvPlugin */
+class FlutterConfigEnvPlugin: FlutterPlugin, MethodCallHandler {
+  /// The MethodChannel that will the communication between Flutter and native Android
+  ///
+  /// This local reference serves to register the plugin with the Flutter Engine and unregister it
+  /// when the Flutter Engine is detached from the Activity
   private lateinit var channel : MethodChannel
-
-  override fun onAttachedToEngine(@NonNull flutterPluginBinding: FlutterPlugin.FlutterPluginBinding) {
+  private  var applicationContext: Context? = null
+  override fun onAttachedToEngine(flutterPluginBinding: FlutterPlugin.FlutterPluginBinding) {
     applicationContext = flutterPluginBinding.applicationContext
     channel = MethodChannel(flutterPluginBinding.binaryMessenger, "flutter_config_env")
     channel.setMethodCallHandler(this)
-  }
-
-  override fun onDetachedFromEngine(binding: FlutterPlugin.FlutterPluginBinding) {
-    channel.setMethodCallHandler(null)
-    applicationContext = null
   }
 
   override fun onMethodCall(call: MethodCall, result: MethodChannel.Result): Unit {
@@ -36,11 +35,17 @@ class FlutterConfigEnvPlugin(private val context: Context? = null): FlutterPlugi
     }
   }
 
+
+  override fun onDetachedFromEngine(binding: FlutterPlugin.FlutterPluginBinding) {
+    channel.setMethodCallHandler(null)
+    applicationContext = null
+  }
   private fun loadEnvVariables(): Map<String, Any?> {
     val variables = hashMapOf<String, Any?>()
 
     try {
       val context = applicationContext!!.applicationContext
+
       val resId = context.resources.getIdentifier("build_config_package", "string", context.packageName)
       val className: String = try {
         context.getString(resId)
@@ -68,6 +73,4 @@ class FlutterConfigEnvPlugin(private val context: Context? = null): FlutterPlugi
     }
     return variables
   }
-
-
 }

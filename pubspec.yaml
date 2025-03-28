@@ -1,6 +1,6 @@
 name: flutter_config_env
 description: Plugin that exposes environment variables to your Dart code in Flutter as well as to your native code in iOS and Android. Bring some 12 factor love to your Flutter apps.
-version: 2.0.0
+version: 2.0.1
 homepage: https://github.com/arunkumarchauhan/flutter_config_env
 repository: https://github.com/arunkumarchauhan/flutter_config_env
 

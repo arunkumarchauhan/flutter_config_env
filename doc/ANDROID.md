@@ -74,6 +74,13 @@ project.ext.envConfigFiles = [
 apply from: project(':flutter_config_env').projectDir.getPath() + "/dotenv.gradle"
 ```
 
+if using build.gradle.kts 
+```
+apply(from = "${project(":flutter_config_env").projectDir}/dotenv.gradle")
+ 
+```
+-Add     ```buildFeatures.buildConfig = true ``` inside the android block in app level build.gradle.kts
+
 ## Different Package Names
 
 In `android/app/build.gradle`, if you use `applicationIdSuffix` or `applicationId` that is different from the package name indicated in `AndroidManifest.xml` in `<manifest package="...">` tag, for example, to support different build variants:
@@ -121,6 +128,4 @@ Edit your app-level build.gradle file to look like this:
 
 You also need to make sure you are on the latest version of gradle
 
-#Note - For using this plugin with newly created projects using build.gradle.kts instead of build.gradle , new style of using it as follows:
-- apply(from = "${project(":flutter_config_env").projectDir}/dotenv.gradle")
-- Add     ```buildFeatures.buildConfig = true ``` inside the android block in app level build.gradle.kts
+
